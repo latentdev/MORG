@@ -8,19 +8,30 @@ namespace MORG
 {
     class Field
     {
-        int x_size;
-        int y_size;
+        protected int x_size;
+        protected int y_size;
+        public Random n = new Random();
 
-        Field()
+        public Field()
         {
             x_size = 10;
             y_size = 10;
         }
 
-        Field(int x,int y)
+        public Field(int x,int y)
         {
             x_size = x;
             y_size = y;
+        }
+
+        public int Getx_size()
+        {
+            return x_size;
+        }
+
+        public int Gety_size()
+        {
+            return y_size;
         }
     }
 }

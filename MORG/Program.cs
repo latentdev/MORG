@@ -12,11 +12,17 @@ namespace MORG
         static void Main(string[] args)
         {
             Organism a = new ORG_A();
-            a.PerformMove();
-            a = new ORG_B();
-            a.PerformMove();
-            a = new ORG_C();
-            a.PerformMove();
+            Organism b = new ORG_B();
+            Organism c = new ORG_C();
+
+            Field field = new Field(10,10);
+            for (int i = 0; i< 10; i++)
+            {
+                a.PerformMove(a, field);
+                b.PerformMove(b, field);
+                c.PerformMove(c, field);
+                Console.WriteLine();
+            }
         }
     }
 }

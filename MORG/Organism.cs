@@ -12,10 +12,36 @@ namespace MORG
         protected char type;
         protected int x;
         protected int y;
+        protected string name;
 
-        public void PerformMove()
+        public void PerformMove(Organism h, Field m)
         {
-            movebehavior.move();
+            movebehavior.move(h,m);
+        }
+
+        public int Getx()
+        {
+            return x;
+        }
+
+        public void Setx(int coord)
+        {
+            x = coord;
+        }
+
+        public int Gety()
+        {
+            return y;
+        }
+
+        public void Sety(int coord)
+        {
+            y = coord;
+        }
+
+        public string Getname()
+        {
+            return name;
         }
     }
 
@@ -27,7 +53,8 @@ namespace MORG
             type = 'a';
             x = 0;
             y = 0;
-            Console.Write("Organism A ");
+            name = "Organism A";
+            //Console.Write("Organism A ");
             movebehavior = new Paddles();
         }
     }
@@ -39,7 +66,8 @@ namespace MORG
             type = 'b';
             x = 10;
             y = 10;
-            Console.Write("Organism B ");
+            name = "Organism B";
+            //Console.Write("Organism B ");
             movebehavior = new Oozes();
         }
     }
@@ -51,7 +79,8 @@ namespace MORG
             type = 'c';
             x = 5;
             y = 5;
-            Console.Write("Organism C ");
+            name = "Organism C";
+            //Console.Write("Organism C ");
             movebehavior = new Paddles();
         }
     }
