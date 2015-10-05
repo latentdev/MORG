@@ -1,0 +1,6 @@
+c:\users\laten\documents\visual studio 2015\Projects\MORG\MORG\bin\Debug\MORG.exe.config
+c:\users\laten\documents\visual studio 2015\Projects\MORG\MORG\bin\Debug\MORG.exe
+c:\users\laten\documents\visual studio 2015\Projects\MORG\MORG\bin\Debug\MORG.pdb
+c:\users\laten\documents\visual studio 2015\Projects\MORG\MORG\obj\Debug\MORG.csprojResolveAssemblyReference.cache
+c:\users\laten\documents\visual studio 2015\Projects\MORG\MORG\obj\Debug\MORG.exe
+c:\users\laten\documents\visual studio 2015\Projects\MORG\MORG\obj\Debug\MORG.pdb
